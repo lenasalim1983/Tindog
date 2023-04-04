@@ -182,4 +182,7 @@ p{
     .cta-heading{
         font-size:6rem;  
     }
+    .testimonial-img{
+        width:30%;
+    }
 }
