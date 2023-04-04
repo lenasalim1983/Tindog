@@ -1,60 +1,214 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Lena Salim</title>
-        <link rel="stylesheet" href="CSS\styles.css">
-        <link rel="icon" href="images\favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-        <div class="top-container">
-            <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-            <h1>I'm Lena Salim.</h1>
-            <p class="job-title-text">a project leader</p>
-            <img class="bottom-cloud"src="images/cloud.png" alt="cloud-img">
-            <img class="img-mountain" src="images/mountain.png" alt="mountain-img">
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- fav icon-->
+  <link rel="icon" href="images\favicon.ico">
+
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Free Icons-->
+  <script src="https://kit.fontawesome.com/4ed07b7171.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">    
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Download</a>
+                </li>
+            </ul>
         </div>
-        <div class="middle-container">
-            <div class="profile">
-              <img class="img-profile" src="images/Lena.jpeg" alt="lena-img">
-              <h2>Hello.</h2>
-              <p>I have 16 years of experience as a leader in IT, including 5 years as the owner of an IT start-up and 1 year as an IT project director. I have 3 international certifications.</p>
+      </nav>
+
+      <!-- Title -->
+    
+      <div class="row">
+        <div class="col-lg-6 col-sm-12" >
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+        <div class="title-img-col col-lg-6 col-sm-12" >
+          <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="icon fa-solid fa-circle-check fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class=" icon fa-solid fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="icon fa-solid fa-circle-check fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+
+    
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      <div class="pricing-col col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <div class="card-header">
+              <h3>Chihuahua</h3>
             </div>
-            <hr>
-            <div class="certifications">
-              <h2>My Certifications.</h2>
-              <div class="certification-row">
-                <img class="img-left" src="images/pmp.png" alt="pmp-img">
-                <h3>PMP</h3>
-                <p>Project Management Professional (PMP) certification represents an elite group of project managers. It proves project leadership experience and expertise in any way of working. </p>
-              </div>
-              <div class="certification-row">
-                <img class="img-right" src="images/prince2.jpg" alt="prince2-img">
-                <h3>Prince 2</h3>
-                <p>PRINCE2 is a structured project management method and practitioner certification programme. It is adopted in many countries worldwide, including the UK, Western European countries, and Australia.</p>
-              </div>
-              <div class="certification-row">
-                <img class="img-left" src="images/PSM.jpg" alt="psm-img">
-                <h3>PSM</h3>
-                <p>The Professional Scrum Master Certification (PSM I) validates your knowledge of the Scrum framework, the Scrum Master responsibilities and how to apply Scrum. It is recognized by the industry as a certification that demonstrates a fundamental level of Scrum mastery.</p>
+            <div class="card-body">
+              <h2>Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-lg btn-outline-dark btn-block" type="button">Sign Up</button>
               </div>
             </div>
-            <hr>
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <h3>Thinking of an opportunity to collaborate with me?</h3>
-              <p>If you are excited to explore more about what I can do or how I can contribute to your organization, please go ahead and click on below.</p>
-              <a class="btn" href="mailto:salim.lena.anu@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      <div class="pricing-col col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <div class="card-header">
+              <h3>Labrador</h3>
             </div>
-          </div>
-          <div class="bottom-container">
-            <a class="footer-link" href="https://www.linkedin.com/in/lena-magda-2155581a1/">LinkedIn</a>
-            <a class="footer-link" href="https://www.facebook.com/lena.salim/">Facebook</a>
-            <a class="footer-link" href="https://www.instagram.com/lenasalim1983/">Instagram</a>
-            <p class="copyright-text">©2023 Lena Salim.</p>
-          </div>     
-        </div>     
-    </body>
+            <div class="card-body">
+              <h2>$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="pricing-col col-lg-4 col-md-12 col-sm-12">
+        <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2>$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-lg btn-dark btn-block" type="button">Sign Up</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-lg btn-dark download-button" type="button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button  class="btn btn-lg btn-light download-button" type="button"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icon fa-brands fa-twitter"></i>
+    <i class="social-icon fa-brands fa-facebook"></i>
+    <i class="social-icon fa-brands fa-instagram"></i>
+    <i class="social-icon fa-solid fa-envelope"></i>
+    <p>© Copyright 2023 TinDog</p>
+
+  </footer>
+
+
+</body>
+
 </html>
